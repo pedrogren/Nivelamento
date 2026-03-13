@@ -129,11 +129,28 @@ while parar != "sim":
         else:
             print("não é possivel dividir mais numeros")
             parar = input("deseja parar?")
+    if qo == 5:
+        print('''============================
+                 | ======================== |
+                 | |                      | |
+                 | |quantos numeros?      | |
+                 | ======================== |''')
+        qn = int(input("?"))
+        if qn <=1:
+            print("Não é possivel multiplicar 1 numero")
+        elif qn == 2:
+            numero = int(input("digite a base"))
+            numero2 = int(input("digite o expoente"))
+            print(f'''============================
+                     | ======================== |
+                     | |                      | |
+                     | |{numero2**numero}                |           
+                     | ======================== |''')
+            parar = input("deseja parar?")
+        elif qn == 3:
+            print("Calma lá")
+            parar = input("deseja parar?")
 
-    
-    
-
-        
     
         
     
